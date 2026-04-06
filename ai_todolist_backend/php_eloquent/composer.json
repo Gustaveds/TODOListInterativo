@@ -1,0 +1,13 @@
+{
+    "name": "gusta/php_eloquent",
+    "authors": [
+        {
+            "name": "Gustaveds",
+            "email": "gustavolopessilva@outlook.com"
+        }
+    ],
+    "require": {
+        "illuminate/database": "^13.3",
+        "illuminate/events": "^13.3"
+    }
+}

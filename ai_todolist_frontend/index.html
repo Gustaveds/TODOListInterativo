@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Todo List</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; max-width: 600px; margin: auto; }
+        .hidden { display: none; }
+        .box { border: 1px solid #ccc; padding: 15px; border-radius: 5px; margin-bottom: 20px; }
+        .stats { display: flex; justify-content: space-between; background: #f4f4f4; padding: 10px; border-radius: 5px;}
+        button { cursor: pointer; padding: 5px 10px; }
+    </style>
+</head>
+<body>
+
+    <h2>📝 Minhas Tarefas (Microsserviços)</h2>
+
+    <div id="loginScreen" class="box">
+        <h3>Login</h3>
+        <input type="email" id="email" placeholder="Seu email" value="teste@teste.com">
+        <input type="password" id="senha" placeholder="Sua senha" value="123456">
+        <button onclick="fazerLogin()">Entrar</button>
+        <p><small>Ainda não tem conta? <a href="#" onclick="criarConta()">Criar conta de teste</a></small></p>
+    </div>
+
+    <div id="appScreen" class="hidden">
+        <div class="stats">
+            <span>Total: <b id="statTotal">0</b></span>
+            <span>Concluídas: <b id="statConcluidas">0</b></span>
+            <span>Pendentes: <b id="statPendentes">0</b></span>
+        </div>
+
+        <div class="box">
+            <input type="text" id="novaTarefa" placeholder="O que precisa ser feito?">
+            <button onclick="adicionarTarefa()">Adicionar</button>
+        </div>
+
+        <ul id="listaTarefas"></ul>
+        
+        <button onclick="sair()" style="margin-top: 20px; color: red;">Sair</button>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
