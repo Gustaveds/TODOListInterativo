@@ -1,7 +1,7 @@
 # Fullstack Todo List - Arquitetura de Microsserviços
 Este projeto consiste em um sistema de gerenciamento de tarefas (Todo List) desenvolvido com uma arquitetura distribuída em microsserviços. O objetivo principal foi demonstrar a integração entre diferentes ecossistemas de programação, garantindo segurança, isolamento de dados e escalabilidade.
 
-Projeto desenvolvido para a disciplina de Engenharia de Software.
+Projeto desenvolvido por Gustavo Lopes da Silva (2411165) para o curso de Engenharia de Software.
 
 ### A Arquitetura do Sistema
 O projeto é dividido em quatro partes principais que se comunicam via HTTP/JSON:
